@@ -1,0 +1,33 @@
+/* 初始化css */
+
+html,
+body,
+p,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+    padding: 0;
+}
+
+a:link,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}

@@ -1,0 +1,206 @@
+    /* 导航部分 start */
+    nav {
+        width: 100%;
+        z-index: 99;
+        position: sticky;
+        top: 0;
+        background-color: #fff;
+    }
+    
+    nav>.w>.nav_box {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 70px;
+    }
+    
+    nav>.w>.nav_box>h1 {
+        text-align: right;
+        width: 150px;
+        height: 40px;
+        color: #009555;
+        /* background: url(../imgs/logo.jpg) no-repeat left; */
+        background-size: 40px;
+        line-height: 42px;
+        margin:0 50px;
+    }
+    
+    nav>.w>.nav_box>.navContent {
+        margin-right: 10px;
+    }
+    
+    nav>.w>.nav_box>.navContent>ul {
+        display: flex;
+    }
+    
+    nav>.w>.nav_box>.navContent>ul>li {
+        margin: 20px;
+        font-weight: 900;
+        transition: color .9s linear 0s;
+    }
+    
+    nav>.w>.nav_box>.navContent>ul>li>a {
+        transition: color .3s linear 0s;
+    }
+    
+    nav>.w>.nav_box>.navContent>ul>li>a:hover {
+        color: #009555;
+        border-bottom: 1px solid #009555;
+    }
+    
+
+
+
+
+    .content .background {
+        background-image: url("../imgs/culturDetails/img.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        height: 685px;
+        font: 900 300px '';
+        line-height: 2.2;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .content .background::before {
+        content: '';
+        background-size: cover;
+        background-image: inherit;
+        background-position: 50% 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -99;
+    }
+
+    .content h1 {
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        text-align: center;
+        letter-spacing: 10px;
+        color: #fff;
+    }
+
+    .content h2 {
+        position: absolute;
+        letter-spacing: 2px;
+        top: 120vh;
+        width: 60%;
+        color: #fff;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 30px;
+        background-color: rgba(0, 0, 0, .3);
+    } 
+
+
+
+
+
+    /* 页面主体内容 */
+    
+    .main {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        /* height: 500px; */
+        background-color: #fff;
+        padding-bottom: 50px;
+    }
+    
+    .main>.ww {
+        width: 100%;
+        height: 2850px;
+        margin: 90px 0 0 0 ;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .main .ww .main1{
+        margin: 80px 0 0 0;
+    }
+    .main .ww .main1 h1{
+        font-size: 48px;
+        color: red;
+    }
+    .main .ww .main1 p{
+        margin-top: 40px;
+        line-height: 2.3;
+        color: #555555;
+        font-size: 16px;
+        font-family: Helvetica Neue, Helvetica, Tahoma, Arial, PingFang SC, Microsoft YaHei, Hiragino Sans GB, Heiti SC, SimHei, SimSun, sans-serif;
+    }
+
+    .main .ww .main2{
+        margin: 165px 0 0 0;
+    }
+    .main .ww .main2 h1{
+        font-size: 48px;
+        color: red;
+    }
+    .main .ww .main2 p{
+        margin-top: 40px;
+        line-height: 2.3;
+        color: #555555;
+        font-size: 16px;
+        font-family: Helvetica Neue, Helvetica, Tahoma, Arial, PingFang SC, Microsoft YaHei, Hiragino Sans GB, Heiti SC, SimHei, SimSun, sans-serif;
+    }
+
+    .main .ww .main3{
+        margin: 165px 0 0 0;
+    }
+    .main .ww .main3 h1{
+        font-size: 48px;
+        color: red;
+    }
+    .main .ww .main3 p{
+        margin-top: 40px;
+        line-height: 2.3;
+        color: #555555;
+        font-size: 16px;
+        font-family: Helvetica Neue, Helvetica, Tahoma, Arial, PingFang SC, Microsoft YaHei, Hiragino Sans GB, Heiti SC, SimHei, SimSun, sans-serif;
+    }
+
+    .main .ww .main4{
+        margin: 100px 0 0 0;
+    }
+    .main .ww .main4 h1{
+        font-size: 48px;
+        color: red;
+    }
+    .main .ww .main4 p{
+        margin-top: 40px;
+        line-height: 2.3;
+        color: #555555;
+        font-size: 16px;
+        font-family: Helvetica Neue, Helvetica, Tahoma, Arial, PingFang SC, Microsoft YaHei, Hiragino Sans GB, Heiti SC, SimHei, SimSun, sans-serif;
+    }
+
+    .main .ww .main5{
+        margin: 80px 0 0 0;
+    }
+    .main .ww .main5 h1{
+        font-size: 48px;
+        color: red;
+    }
+    .main .ww .main5 p{
+        margin-top: 40px;
+        line-height: 2.3;
+        color: #555555;
+        font-size: 16px;
+        font-family: Helvetica Neue, Helvetica, Tahoma, Arial, PingFang SC, Microsoft YaHei, Hiragino Sans GB, Heiti SC, SimHei, SimSun, sans-serif;
+    }
+
+
+
+
+
+

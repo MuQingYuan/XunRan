@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>寻染</title>
+  <link rel="shortcut icon" href="/favicon-icons.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../iconfont/iconfont.css">
+  <link rel="stylesheet" href="../css/enterActivity.css">
+</head>
+<body>
+    <a class="iconfont icon-fanhui back" href="../content/culturalPromotion.html"></a>
+  <div class="shell">
+    <div class="container a-container" id="a-container">
+        <form action="" method="" class="form" id="a-form">
+            <h2 class="form_title title">线下活动登记</h2>
+            <span class="form_span">请输入个人信息</span>
+            <input type="text" class="form_input" placeholder="姓名:">
+            <input type="text" class="form_input" placeholder="电话:">
+            <input type="text" class="form_input" placeholder="身份证:">
+            <button class="form_button button submit">确认信息</button>
+        </form>
+    </div>
+
+    <div class="container b-container" id="b-container">
+        <form action="" method="" class="form" id="b-form">
+            <h2 class="form_title title">线上活动登记</h2>
+            <span class="form_span">请输入个人信息</span>
+            <input type="text" class="form_input" placeholder="姓名:">
+            <input type="text" class="form_input" placeholder="电话:">
+            <input type="text" class="form_input" placeholder="身份证:">
+            <button class="form_button button submit">确认信息</button>
+        </form>
+    </div>
+
+    <div class="switch" id="switch-cnt">
+        <div class="switch_circle"></div>
+        <div class="switch_circle switch_circle-t"></div>
+        <div class="switch_container" id="switch-c1">
+            <h2 class="switch_title title" style="letter-spacing: 0;"></h2>
+            <p class="switch_description description"></p>
+            <button class="switch_button button switch-btn">前往线上活动</button>
+        </div>
+
+        <div class="switch_container is-hidden" id="switch-c2">
+            <h2 class="switch_title title" style="letter-spacing: 0;"> </h2>
+            <p class="switch_description description"></p>
+            <button class="switch_button button switch-btn">前往线下活动</button>
+        </div>
+    </div>
+</div>
+
+<script>
+  let switchCtn = document.querySelector("#switch-cnt");
+    let switchC1 = document.querySelector("#switch-c1");
+    let switchC2 = document.querySelector("#switch-c2");
+    let switchCircle = document.querySelectorAll(".switch_circle");
+    let switchBtn = document.querySelectorAll(".switch-btn");
+    let aContainer = document.querySelector("#a-container");
+    let bContainer = document.querySelector("#b-container");
+    let allButtons = document.querySelectorAll(".submit");
+
+    let getButtons = (e) => e.preventDefault()
+    let changeForm = (e) => {
+        // 修改类名
+        switchCtn.classList.add("is-gx");
+        setTimeout(function () {
+            switchCtn.classList.remove("is-gx");
+        }, 1500)
+        switchCtn.classList.toggle("is-txr");
+        switchCircle[0].classList.toggle("is-txr");
+        switchCircle[1].classList.toggle("is-txr");
+
+        switchC1.classList.toggle("is-hidden");
+        switchC2.classList.toggle("is-hidden");
+        aContainer.classList.toggle("is-txl");
+        bContainer.classList.toggle("is-txl");
+        bContainer.classList.toggle("is-z");
+    }
+    // 点击切换
+    let shell = (e) => {
+        for (var i = 0; i < allButtons.length; i++)
+            allButtons[i].addEventListener("click", getButtons);
+        for (var i = 0; i < switchBtn.length; i++)
+            switchBtn[i].addEventListener("click", changeForm)
+    }
+    window.addEventListener("load", shell);
+</script>
+</body>
+</html>

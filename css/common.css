@@ -1,0 +1,257 @@
+/* 公共样式 */
+
+@font-face {
+    font-family: 'iconfont';
+    /* Project id 3307138 */
+    src: url('//at.alicdn.com/t/font_3307138_i47e9pq8hvg.woff2?t=1649337225955') format('woff2'), url('//at.alicdn.com/t/font_3307138_i47e9pq8hvg.woff?t=1649337225955') format('woff'), url('//at.alicdn.com/t/font_3307138_i47e9pq8hvg.ttf?t=1649337225955') format('truetype');
+}
+
+
+body{
+    min-width: 1400px;
+    min-height: 680px;
+}
+
+
+
+/* 版心 */
+
+.w {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Fleft {
+    float: left;
+}
+
+.FRight {
+    float: right;
+}
+
+.clearFix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.color_one {
+    color: #009452;
+}
+
+
+/* 顶部样式 */
+
+.TopNav {
+    display: flex;
+    align-items: center;
+    height: 56px;
+    padding: 0 50px;
+    background-color: #212121;
+    color: #fff;
+}
+
+.TopNav>.w {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+.TopNav>.w>ul { /*珙县蜡染标题，邮箱样式*/
+    display: flex;
+}
+.TopNav>.w>ul>li {
+    position: relative;
+    display: flex;
+    height: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+    line-height: 30px;
+}
+.TopNav>.w>ul>li>span {
+    color: green;
+}
+/* .TopNav>.w>ul>li:nth-child(1)::after {
+    position: absolute;
+    left: 40px;
+    top: -1px;
+    content: ">";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    font-size: 25px;
+} */
+.TopNav>.w>ul>li:nth-child(2) {
+    padding-left: 30px;
+    margin: 0 20px;
+    border-left: 3px solid #fff;
+}
+
+.TopNav>.w>ul>li>a:hover { /*鼠标悬浮样式*/
+    color: #009454;
+}
+.TopNav>.w>ul>li:hover {
+    color: #009454;
+}
+
+
+
+
+.TopNav>.w>ol { /*电话样式*/
+    display: flex;
+}
+
+.TopNav>.w>ol>li:nth-child(1) {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0 25px 0 0;
+}
+
+.TopNav>.w>ol>li:nth-child(1)>span {
+    color: #009452;
+}
+
+.TopNav>.w>ol>li:nth-child(1)::after {
+    position: absolute;
+    left: 180px;
+    top: -3px;
+    content: "";
+    display: inline-block;
+    width: 2px;
+    background-color: #fff;
+    height: 30px;
+}
+
+.TopNav>.w>ol>li:nth-child(2){
+    margin-left: 20px;
+}
+.TopNav>.w>ol>li:nth-child(2)>span {
+    line-height: 30px;
+    display: inline-block;
+    font-size: 18px;
+    color: green;
+}
+.TopNav>.w>ol>li:hover{
+    color: #009454;
+}
+
+
+/* 底部 start */
+
+footer {
+    width: 100%;
+    background-color: #222222;
+}
+
+footer>.w {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer>.w>dl {
+    height: 150px;
+    text-align: center;
+    margin: 50px 0;
+}
+
+footer>.w>dl>dt {
+    font-size: 20px;
+    color: #fff;
+    margin: 10px 0;
+}
+
+footer>.w>dl>dd {
+    text-align: center;
+}
+
+footer>.w>dl>dd>a {
+    font-size: 12px;
+    color: rgb(121, 119, 119);
+}
+
+footer>.w>dl>dd>a:hover {
+    color: red;
+}
+
+footer>.copy {
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 12px;
+    color: rgb(121, 119, 119);
+}
+
+
+/* 返回顶部 */
+
+.scrollBoxTop {
+    position: fixed;
+    cursor: pointer;
+    right: 1px;
+    top: 80%;
+    width: 50px;
+    height: 50px;
+    background-color: #877a7a;
+    transform: rotate(270deg);
+    text-align: center;
+    line-height: 50px;
+    font-size: 35px;
+    color: rgb(177, 169, 169);
+    display: none;
+}
+
+.scrollBoxTop.active {
+    display: block;
+}
+
+.scrollBoxTop:hover {
+    background-color: #009452;
+    color: #fff;
+}
+
+
+
+
+.bgmusic_box{      /*背景音乐盒子样式设置*/
+    position: fixed;
+    bottom: 40px;
+    display: none;
+    left: 25px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    z-index: 998;
+    /* background-color: yellow; */
+}
+#bgmusic{      /*背景音乐盒子样式设置*/
+    position: relative;
+    display: inline-block;
+    width: 59px;
+    height: 59px;
+    border: 1px solid #666;
+    border-radius: 30px;
+    cursor: pointer;
+}
+#bgmusic img{      /*背景音乐图片*/
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+.songRotate{    /*设置动画*/
+    animation: songRotate 60s linear 0ms infinite;
+}
+@keyframes songRotate {
+    0% {
+        transform: rotate(0deg);        
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
